@@ -1,0 +1,30 @@
+<div class="product-detail">
+  <div class="product-image">
+    <!-- Product Image -->
+    <img [src]="baseImageUrl + product?.id + '.jpg'" class="product-image" />
+  </div>
+  <div class="product-info">
+    <!-- Product Title -->
+    <h2>{{ product?.name }}</h2>
+    
+    <!-- Product Description -->
+    <p class="description">{{ product?.description }}</p>
+
+    <!-- Product Price -->
+    <p class="price">${{ product?.price }}</p>
+
+     <!-- Quantity Input -->
+  <div class="quantity">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" [(ngModel)]="selectedQuantity" min="1" max="10">
+  </div>
+    
+    <!-- Buy Now Button -->
+    <div>
+    <button class="buttons">Buy Now</button>
+    <button class="buttons" id="add-cart-button" (click)="addToCart(product.id)">Add to Cart</button>
+  </div>
+  </div>
+
+  
+</div>

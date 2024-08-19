@@ -1,0 +1,17 @@
+<mat-toolbar class="transparent-toolbar">
+    <div>
+        <span routerLink="/home" routerLinkActive="active" class="toolbar-link">Home</span>
+        <span routerLink="/men" routerLinkActive="active" class="toolbar-link">Men</span>
+        <span routerLink="/women" routerLinkActive="active" class="toolbar-link">Women</span>
+        <span routerLink="/sale" routerLinkActive="active" class="toolbar-link">Sale</span>
+    </div>
+    <div style="margin-left: auto;">
+        <!-- Conditionally show "Profile" or "Sign In" and "Register" -->
+        <span *ngIf="isLoggedIn(); else showSignIn" class="toolbar-link" (click)="logOut()">Sign Out</span>
+        <ng-template #showSignIn>
+            <span routerLink="/login" routerLinkActive="active" class="toolbar-link">Sign In</span>
+            <span routerLink="/register" routerLinkActive="active" class="toolbar-link">Register</span>
+        </ng-template>
+        <span *ngIf="isLoggedIn();" routerLink="/cart" routerLinkActive="active" class="toolbar-link" >Bag | ${{ cartTotal.toFixed(2) }}</span>
+    </div>
+</mat-toolbar>

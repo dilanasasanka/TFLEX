@@ -1,0 +1,43 @@
+<div class="bag-page">
+  <!-- Left Side - Quote and Shop Now -->
+  <div class="left-side">
+    <div class="brand-name">
+      <h1>BAG<span>it up, you're almost there!</span></h1>
+    </div>
+  </div>
+  <!-- Right Side - Model Image -->
+  <div class="right-side">
+    <img src="assets/images/bag_women.png" alt="Model Wearing T-Shirt">
+  </div>
+</div>
+<h2 class="category">Shopping Bag</h2>
+<div class="cart-container">
+  <!-- Loop through products in the cart and display them -->
+  <div *ngFor="let product of products" class="cart-item">
+    <!-- Product Image -->
+    <div class="product-image-container">
+      <img [src]="baseImageUrl + product.id + '.jpg'" alt="Product Image" class="product-image" />
+    </div>
+    <!-- Product Details -->
+    <div class="product-details">
+      <div class="p-details">
+        <h3 class="product-title">{{ product.name }}</h3>
+        <p class="product-description">{{ product.description }}</p>
+      </div>
+      <div class="p-details-2">
+        <p class="product-price"><span>${{ product.price }}</span></p>
+        <p>×</p>
+        <p class="quantity-value">{{ getQuantityForProduct(product.id) }}</p>
+      </div>
+      <button class="remove-button" (click)="removeFromCart(product.id)">REMOVE</button>
+    </div>
+  </div>
+  <div class="cart-summary">
+    <div class="total">
+      <span>Total :</span>
+      <span class="total-price">{{ calculateTotal() | currency: 'USD' }}</span>
+    </div>
+    <button class="buttons pay-button">Pay Now</button>
+  </div>
+  
+</div>

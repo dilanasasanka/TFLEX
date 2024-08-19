@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Imbue:opsz,wght@10..100,100&display=swap');
+*{
+  background-color: rgb(250, 250, 250);
+}
+.navbar{
+
+    justify-content: space-between;
+}
+div{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+span{
+    padding-right: 2rem;
+    font-weight: lighter;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.transparent-toolbar {
+  background-color: rgb(250, 250, 250);
+  }
+
+.toolbar-link {
+    font-size: 17px; /* Adjust the font size as desired */
+    cursor: pointer; /* Set the cursor style to pointer */
+    text-decoration: none; /* Remove underline from links */
+    color: #000000; /* Default link color */
+    font-family: 'Bebas Neue', sans-serif;
+    
+  }
+
+  /* Style the active link */
+.toolbar-link.active {
+    color: #CC8787; /* Active link text color */
+     /* Style the active link differently, e.g., make it bold */
+     font-size: x-large;
+  }
+
+.toolbar-link:hover {
+    color: #CC8787; /* Change text color on hover */
+    /* Add a vertical translation on hover */
+    font-size: x-large;
+  }
+  
+span{
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: translateY(-3px);
+  }

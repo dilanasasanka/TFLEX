@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Imbue:opsz,wght@10..100,100&display=swap');
+
+/* Add CSS styles for product cards and images */
+.bag-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgb(250, 250, 250);
+}
+
+.right-side img {
+  max-width: 100%;
+  height: 50vh;
+}
+
+.left-side {
+  flex: 1;
+  padding: 20px;
+  padding-left: 270px;
+}
+
+.right-side{
+padding-right: 160px;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+
+.brand-name h1 {
+  color: #000;
+  font-family: 'Emberly-Bold';
+  font-size: 100px;
+  line-height: 0.7;
+  /* font-stretch: condensed; */
+  font-stretch: extra-condensed;
+}
+
+.brand-name span {
+  color: #000;
+  font-family: 'Emberly-Bold';
+  font-size: 40px;
+  line-height: 0.7;
+  /* font-stretch: condensed; */
+  font-stretch: extra-condensed;
+  margin-left: 11px;
+}
+
+.brand-name{
+  padding: 0;
+  margin: 0;
+  
+}
+
+.category{
+  font-size: 22px; /* Adjust the font size as needed */
+   /* Center the title horizontally */
+  text-align: center;
+  padding: 50px;
+  color: #000000;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight:500;
+  background-color: rgb(250, 250, 250);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+  margin: 0;
+}
+
+
+/* CSS for the cart container */
+.cart-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  }
+  
+  /* CSS for each product card */
+  .cart-item {
+    display: flex; /* Display image and details side by side */
+    align-items: center; /* Vertically center content */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* CSS for the product image container (left side) */
+  .product-image-container {
+    flex: 0 0 auto; /* Prevent image from expanding */
+    margin-right: 20px; /* Add some spacing between image and details */
+
+  }
+  
+  /* CSS for the larger product image */
+  .product-image {
+    max-width: 220px; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* CSS for product details (right side) */
+  .product-details {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    flex-grow: 1; /* Allow details to expand and fill remaining space */
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    padding-left: 30px;
+    align-items: center;
+  }
+
+  .p-details{
+    flex: 2;
+  }
+
+  .p-details-2{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 40px;
+    align-items: center;
+    margin-left: 140px;
+  }
+  
+  /* Remaining CSS styles for product details (same as previous examples) */
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #333;
+  }
+  
+  .product-price span{
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #CC8787;
+  }
+  /* CSS for quantity section (same as previous examples) */
+  .quantity {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .quantity-value {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .remove-button {
+    background-color: #CC8787;
+    color: #fff;
+    height: 80px;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .remove-button:hover {
+    background-color: #000000;
+  }
+
+  /* Style the cart summary container */
+.cart-summary {
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+/* Style the total section */
+.total {
+  font-size: 20px;
+}
+
+.total span:first-child {
+  font-weight: bold;
+}
+
+.total-price{
+  padding-left: 50px;
+  font-size: 26px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Style the "Pay Now" button */
+.pay-button {
+  background-color: #CC8787;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+  height: 100px;
+}
+
+.pay-button:hover {
+  background-color: #3b3b3b;
+}
+
+
+  @font-face {
+    font-family: 'Emberly-Bold';
+    src:url('../../assets/fonts/webfonts_Emberly-Bold/Emberly-Bold.ttf.woff') format('woff'),
+        url('../../assets/fonts/webfonts_Emberly-Bold/Emberly-Bold.ttf.svg#Emberly-Bold') format('svg'),
+        url('../../assets/fonts/webfonts_Emberly-Bold/Emberly-Bold.ttf.eot'),
+        url('../../assets/fonts/webfonts_Emberly-Bold/Emberly-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+  

@@ -1,0 +1,5 @@
+app-header {
+    position: relative; /* Make sure the header is positioned */
+    z-index: 1;
+}
+

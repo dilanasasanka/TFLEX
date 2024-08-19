@@ -1,0 +1,34 @@
+<div class="women-page">
+    <!-- Left Side - Quote and Shop Now -->
+    <div class="left-side">
+      <div class="brand-name">
+        <h1>WOMEN<span>who wear confidence are Unstoppable!</span></h1>
+      </div>
+    </div>
+    <!-- Right Side - Model Image -->
+    <div class="right-side">
+      <img src="assets/images/tflex_women.png" alt="Model Wearing T-Shirt">
+    </div>
+  </div>
+
+  <div>
+    <h2 class="category">Crop Tee</h2>
+    <div class="products">
+        <mat-card *ngFor="let product of products_ct" class="product-card">
+            <div class="product-image-container">
+                <a [routerLink]="['/product', product.id]"> <!-- Link to product detail with productId parameter -->
+                  <img [src]="baseImageUrl + product.id + '.jpg'" alt="{{ product.name }}" class="product-image" />
+                </a>
+              </div>
+          <mat-card-content class="product-details">
+            <div class="product-name">{{ product.name | lowercase }}</div>
+            <div class="product-price">{{ product.price | currency:'USD':'symbol' }}</div>
+          </mat-card-content>
+          <div class="cart-button">
+            <button mat-icon-button color="dark" (click)="addToCart(product.id)">
+              <mat-icon>shopping_cart</mat-icon>
+            </button>
+          </div>
+        </mat-card>
+      </div>
+    </div>

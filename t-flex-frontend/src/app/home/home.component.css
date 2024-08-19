@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Imbue:opsz,wght@10..100,100&display=swap');
+*{
+  background-color: rgb(250, 250, 250);
+}
+
+.home-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.left-side {
+  flex: 1;
+  padding: 20px;
+  padding-left: 150px;
+}
+
+.right-side img {
+  max-width: 100%;
+  height: 100vh;
+}
+
+.right-side{
+padding-right: 50px;
+}
+
+.brand-name h1 {
+  color: #000;
+  font-family: 'Emberly-Bold';
+  font-size: 200px;
+  line-height: 0.7;
+  font-stretch: extra-condensed;
+}
+
+.brand-name{
+
+  padding: 0;
+  margin: 0;
+}
+
+.quote p {
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  padding-bottom: 14px;
+}
+
+.shop-now-button {
+  background-color: #CC8787;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.shop-now-button:hover {
+  background-color: #000000;
+}
+
+.comfort-fit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(250, 250, 250);
+  margin-bottom: 0;
+}
+
+.topic-right-side img {
+  max-width: 100%;
+  height: 300px;
+}
+
+.topic-left-side {
+  flex: 1;
+  /* Adjust padding for left side */
+  padding: 20px;
+  padding-left: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.topic-right-side {
+  /* Adjust padding for right side */
+  padding: 20px;
+  padding-left: 50px;
+}
+
+.topic-2-right-side img {
+  max-width: 100%;
+  height: 300px;
+}
+
+.topic-2-left-side {
+  flex: 1;
+  padding: 20px;
+  padding-left: 110px;
+}
+
+.topic-2-right-side{
+padding-right: 40px;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+.topic-brand-name h1 {
+  color: #000;
+  font-family: 'Emberly-Bold';
+  font-size: 60px;
+  line-height: 0.7;
+  /* font-stretch: condensed; */
+  font-stretch: extra-condensed;
+  margin-left: 0px;
+}
+
+.topic-brand-name p {
+  font-size: 15px;
+  color: #000000;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.topic-brand-name {
+  padding: 0;
+  margin: 0;
+  padding-right: 30px;
+}
+
+
+
+@font-face {
+  font-family: 'Emberly-Bold';
+  src:url('../../assets/fonts/webfonts_Emberly-Bold/Emberly-Bold.ttf.woff') format('woff'),
+      url('../../assets/fonts/webfonts_Emberly-Bold/Emberly-Bold.ttf.svg#Emberly-Bold') format('svg'),
+      url('../../assets/fonts/webfonts_Emberly-Bold/Emberly-Bold.ttf.eot'),
+      url('../../assets/fonts/webfonts_Emberly-Bold/Emberly-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+

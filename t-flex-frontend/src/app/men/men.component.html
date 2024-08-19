@@ -1,0 +1,56 @@
+<div class="men-page">
+  <!-- Right Side - Model Image -->
+  <div class="right-side">
+    <img src="assets/images/tflex_men.png" alt="Model Wearing T-Shirt">
+  </div>
+  <!-- Left Side - Quote and Shop Now -->
+  <div class="left-side">
+    <div class="brand-name">
+      <h1><span>Dapper looks for dapper</span>MEN<span>.</span></h1>
+    </div>
+  </div>
+</div>
+
+
+<div>
+<h2 class="category">Comfort Fit</h2>
+<div class="products">
+    <mat-card *ngFor="let product of products_cf" class="product-card">
+        <div class="product-image-container">
+            <a [routerLink]="['/product', product.id]"> <!-- Link to product detail with productId parameter -->
+              <img [src]="baseImageUrl + product.id + '.jpg'" alt="{{ product.name }}" class="product-image" />
+            </a>
+          </div>
+      <mat-card-content class="product-details">
+        <div class="product-name">{{ product.name | lowercase }}</div>
+        <div class="product-price">{{ product.price | currency:'USD':'symbol' }}</div>
+      </mat-card-content>
+      <div class="cart-button">
+        <button mat-icon-button color="dark" (click)="addToCart(product.id)">
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>
+<div>
+    <h2 class="category">Polo Shirt</h2>
+    <div class="products">
+        <mat-card *ngFor="let product of products_ps" class="product-card">
+            <div class="product-image-container">
+                <a [routerLink]="['/product', product.id]"> <!-- Link to product detail with productId parameter -->
+                  <img [src]="baseImageUrl + product.id + '.jpg'" alt="{{ product.name }}" class="product-image" />
+                </a>
+              </div>
+          <mat-card-content class="product-details">
+            <div class="product-name">{{ product.name | lowercase }}</div>
+            <div class="product-price">{{ product.price | currency:'USD':'symbol' }}</div>
+          </mat-card-content>
+          <div class="cart-button">
+            <button mat-icon-button color="dark" (click)="addToCart(product.id)">
+              <mat-icon>shopping_cart</mat-icon>
+            </button>
+          </div>
+        </mat-card>
+      </div>
+    </div>

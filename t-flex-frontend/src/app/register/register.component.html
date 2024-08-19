@@ -1,0 +1,26 @@
+<div class="container">
+  <mat-card class="login-card">
+    <mat-card-content class="content">
+      <h1 class="mat-title">TFLEX</h1>
+      <p>Register Your Account</p>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-field">
+          
+            <input matInput placeholder="Username" id="username" name="username" [(ngModel)]="registerData.username" required>
+          
+        </div>
+        <div class="form-field">
+          
+            <input matInput placeholder="Password" type="password" id="password" name="password" [(ngModel)]="registerData.password" required>
+          
+        </div>
+        <div class="form-field">
+          
+            <input matInput placeholder="Confirm Password" type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="registerData.confirmPassword" required>
+          
+        </div>
+        <button class="login-button" type="submit">Register</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
